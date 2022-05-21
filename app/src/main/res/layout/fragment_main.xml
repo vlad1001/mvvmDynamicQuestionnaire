@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MainFragmentBinding">
+<!--        <variable name="data" type="com.example.mvvmdynamicquestionnaire.Models.MainScreenData"/>-->
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/upper_lay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_go_tech">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/title_lay"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/purple_700"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GoTech Questionnaire"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="36sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show me what you got"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/grey_go_tech"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Required"
+                    android:textColor="@color/red_go_tech"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="15sp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/questions_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_lay"
+                android:layout_marginTop="10sp"
+                android:layout_marginHorizontal="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10sp"
+                android:layout_below="@+id/questions_recycler_view"
+                android:text="Submit"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

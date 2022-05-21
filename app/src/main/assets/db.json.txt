@@ -1,0 +1,58 @@
+{
+"questions": [
+      {
+        "Question": "What language is your favourit?",
+        "Qanswers": [
+          {
+            "type": "0",
+            "answer1": "Kotlin",
+			"answer2": "Java",
+			"answer3": "C++",
+          }
+        ]
+      },
+      {
+        "Question": "what do you like about programing?",
+        "Qanswers": [
+          {
+            "type": "1"
+          }
+        ]
+      },
+	        {
+        "Question": "How was the assignment?",
+        "Qanswers": [
+          {
+            "type": "2",
+            "answer1": [
+				{
+					"answer" : "Easy"
+					"userInput" : false
+				}
+			],
+			"answer2": [
+				{
+					"answer" : "Normal"
+					"userInput" : false
+				}
+			],
+			"answer3": [
+				{
+					"answer" : "Hard"
+					"userInput" : false
+				}
+			],
+			"answer4": [
+				{
+					"answer" : "Other"
+					"userInput" : true
+				}
+			]
+          }
+        ]
+      }
+],
+"answers": [
+	
+]
+}
